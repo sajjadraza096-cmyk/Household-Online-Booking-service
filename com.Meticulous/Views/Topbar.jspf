@@ -1,0 +1,15 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<div class="topbar">
+    <span class="brand">METICULOUS HOUSEHOLD SERVICES</span>
+    <div>
+        <a href="${pageContext.request.contextPath}/home">Home</a>
+        <a href="${pageContext.request.contextPath}/booking?action=list">Bookings</a>
+                <c:if test="${sessionScope.user.role == 'ADMIN'}">
+            <a href="${pageContext.request.contextPath}/service?action=list">Manage Services</a>
+            <a href="${pageContext.request.contextPath}/enquiry">Enquiries</a>
+        </c:if>
+        <a href="${pageContext.request.contextPath}/logout">
+            Logout (<c:out value="${sessionScope.user.name}"/>)
+        </a>
+    </div>
+</div>
