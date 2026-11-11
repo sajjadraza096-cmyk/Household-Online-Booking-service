@@ -1,0 +1,80 @@
+/* Dynamic service list (loaded from the database) */
+.db-services {
+    margin: 20px 0;
+}
+
+.db-services h4 {
+    color: #FA8072;
+    margin-bottom: 10px;
+}
+
+.db-service-card {
+    background: #fff;
+    border-left: 4px solid #FA8072;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.db-service-card .info strong {
+    display: block;
+    color: #222;
+}
+
+.db-service-card .info small {
+    color: #555;
+}
+
+.db-service-card .price {
+    font-weight: bold;
+    color: #1b5e20;
+    white-space: nowrap;
+}
+
+.book-btn {
+    background: #FA8072;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.book-btn:hover {
+    background: #e5604f;
+}
+
+/* Login-related items in the navbar */
+.nav-user {
+    color: #FA8072;
+    font-weight: bold;
+}
+
+/* Enquiry result messages */
+.enquiry-msg {
+    max-width: 600px;
+    margin: 0 auto 15px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.enquiry-ok {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #c8e6c9;
+}
+
+.enquiry-bad {
+    background: #fdecea;
+    color: #b71c1c;
+    border: 1px solid #f5c6cb;
+}
